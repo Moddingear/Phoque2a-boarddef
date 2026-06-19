@@ -110,7 +110,12 @@
 
 #define A_VBUS					PA3		//Pin to sense supply voltage, connected to COMP2
 #define BRAKE_RESISTOR			PA2		//Brake resistor control, also connected to output of COMP2
-#define BRAKE_AF				8
+#define BRAKE_AF				8		//Alternate function 8
+#define BRAKE_DAC				DAC1	//DAC1
+#define BRAKE_DAC_CHAN			DAC_CHANNEL_2	//Channel 2
+#define BRAKE_COMP				COMP2	//Comparator 2
+#define BRAKE_COMP_PLUS			COMP_INPUT_PLUS_IO2
+#define BRAKE_COMP_MINUS		COMP_INPUT_MINUS_DAC1_CH2
 
 #define VBUS_MUL_FACTOR			23		//Multiply the adc voltage read by this value to get the supply voltage
 
