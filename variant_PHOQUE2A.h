@@ -136,6 +136,9 @@
 //Voltage divider based on CMFA104J4250HANT and 100k resistor
 #define NTC_B_CONSTANT			4250	//B = ln(R/R0)/(1/T-1/T0)
 #define NTC_T0					(273.15f+25)//Kelvin
+#ifndef NTC_DIVIDER_BALANCE
+#define NTC_DIVIDER_BALANCE		(22.f/100.f) //R1 (value of the other resistance in the voltage divider) over R0 (resistance of NTC at T0)
+#endif
 
 #define CAN_RX					PB8
 #define CAN_TX					PB9
