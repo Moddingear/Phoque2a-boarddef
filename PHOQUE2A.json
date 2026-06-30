@@ -36,7 +36,8 @@
       "cmsis-dap",
       "blackmagic",
       "mbed",
-      "dfu"
+      "dfu",
+      "serial"
     ]
   },
   "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32g431cb.html",
